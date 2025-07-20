@@ -1,0 +1,390 @@
+:root{
+    --blue:#2f7fb4;
+    --border-radius-circle: 50%;
+
+    /* css */
+      --secondary-color:#81176a;
+      --font-size-xl:2rem;
+      --border-radius-s:8px;
+      --font-size-m:1.12rem;
+      --font-size-l:1.5rem;
+    /* css */
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+    /* overall styling for css */
+    .section-title{
+        text-align: center;
+        padding:60px 0 40px;
+        text-transform: uppercase;
+        font-size:var(--font-size-xl);
+
+    }
+
+    .section-title::after{
+        content:"";
+        width: 80px;
+        height: 5px;
+        display: block;
+        margin: 10px auto 0;
+        border-radius:var(--border-radius-s);
+        background:var(--secondary-color);
+
+    }
+    
+    /* css styling ended */
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/* chatgpt */
+.home .content {
+    position: absolute;
+    top: 20%;
+    left: 9%;
+}
+
+
+header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+header .logo
+{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+
+}
+
+header .logo span{
+    color: var(--blue);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+     background-color: var(--blue);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0%;
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+     background-color: var(--blue);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+     font-size: 5rem;
+     color: #ffffff;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content span{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    padding-top: 5px;
+}
+.home .content .a:hover{
+    padding: 5px;
+}
+
+/* about section css starts*/
+.about-section{
+     padding:120px 0;
+     background: #fff
+}
+.about-section .section-content{
+    display: flex;
+    gap:50px;
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-left:75px;
+    border-radius: var(--border-radius-circle);
+
+}
+.about-section .about-image-wrapper .about-image:hover{
+    padding:25px;
+}
+.about-section .about-details .section-title{
+    padding:0;
+}
+.about-section .about-details .text{
+    line-height:25px;
+    margin:50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+.about-section .social-link-list{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.about-section .social-link-list .social-link{
+    color: #333;
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+.about-section .social-link-list .social-link:hover{
+    color:var(--blue);
+}
+.about-section .social-link-list .social-link:hover {
+    background-color: var(--blue);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+
+/* about section css ends */
+
+/* services section starts */
+.services-section{
+    padding:50px 0 100px;
+    background:#fff;
+}
+.services-list .services{
+    display: flex;
+    padding:35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.services-section .name{
+    margin-bottom: 16px;
+    font-size:var(--font-size-l)
+}
+.services-section .services .about{
+    line-height: 25px;
+}
+
+.services-list .user-image {
+    width: 250px;              /* Set a fixed width */
+    height: 250px;             /* Set a fixed height */
+    object-fit: cover;         /* Maintain aspect ratio and crop if necessary */
+    border-radius: var(--border-radius-circle); /* Optional: rounded corners */
+    display: block;
+    margin: 0 auto;            /* Center the image if needed */
+    margin-bottom: 50px;;
+}
+
+/* service section ends */
+
+/* contact css starts */
+  .contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .contact .row form{
+      flex:1 1 40rem;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+      border:.1rem solid rgba(0,0,0,.1);
+      background: #fff;
+      border-radius: .5rem;
+
+  }
+  .contact .row .image{
+    flex:1 1 40rem;
+  }
+  .contact .row .image img{
+    width: 100%;
+  }
+  .contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border:.1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width:100%
+
+  }
+  .contact .row form .box:focus{
+    border-color: var(--secondary-color);
+  }
+
+  .contact .row form textarea{
+    height: 15rem;
+    resize: none;
+  }
+  .contact .row .btn{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    border-radius: 50px;
+    padding:5px;
+  }
+  .contact .image:hover{
+    padding:25px;
+  }
+/* contact css ends */
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media( max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    .about-section .section-content{
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top:0; left:0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
